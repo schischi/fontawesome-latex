@@ -47,7 +47,7 @@ def gen_tex(icons):
     f = open('out.tex', 'w')
     for ic in icons:
         f.write("\showcaseicon{" + ic[0] + "}{fa" + ic[1] + "}")
-        if ic[0] == ic[2]:
+        if ic[0] != ic[2]:
             f.write("{alias}")
         f.write("\n")
     f.close()
