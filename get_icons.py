@@ -31,15 +31,15 @@ def get_icons():
         icon = sub[it.start() + 8 : it.end() - 1]
         tex_name = camel_case(name)
         print("Retrieve: " + name + " (" + icon + ")")
-        code = get_code(icon)
+        code = get_code(icon).upper()
         ret.append((name, tex_name, icon, code))
     return ret
 
 def gen_sty(icons):
     f = open('out.sty', 'w')
     for ic in icons:
-        f.write(("\expandafter\def\csname faicon@" + ic[0] + " \endcsname").ljust(63)
-                + ("{\symbol{\"" + ic[3] + "}}  \\def\\fa" + ic[1]).ljust(44)
+        f.write(("\expandafter\def\csname faicon@" + ic[0] + "\endcsname").ljust(63)
+                + ("{\symbol{\"" + ic[3] + "}}  \\def\\fa" + ic[1]).ljust(42)
                 + " {{\FA\csname faicon@" + ic[0] + "\endcsname}}\n")
     f.close()
 
