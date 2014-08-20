@@ -23,11 +23,7 @@ def get_icons():
     req = urllib.request.Request(url);
     html = str(urllib.request.urlopen(req).read())
     ic = re.finditer('<a href=\"../icon/[^\"]*\"><i class=\"fa fa-([^<]*)<', html)
-    i = 0
     for x in ic:
-        i += 1
-        if i == 6:
-            break
         sub = html[x.start():x.end()]
         it = re.search('class=\"fa [^>]*>', sub)
         name = sub[it.start() + 13 : it.end() - 2]
