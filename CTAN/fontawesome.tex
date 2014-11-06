@@ -8,8 +8,8 @@
 
 \documentclass{ltxdoc}
 %\GetFileInfo{\jobname.sty}
-\def\fileversion{3.1.1}
-\def\filedate{May 10, 2013}
+\def\fileversion{4.2}
+\def\filedate{November 6, 2014}
 \usepackage{lmodern}
 \usepackage[numbered]{hypdoc}
 \usepackage{hologo}
@@ -34,11 +34,12 @@
 \maketitle
 
 \begin{abstract}
-The \textsf{\jobname} package grants access to 439 web-related icons provided by the included \emph{Font Awesome} free font, designed by Dave Gandy and released\footnote{See \url{http://fortawesome.github.com/Font-Awesome} for more details about the font itself} under the open SIL Open Font License\footnote{Available at \url{http://scripts.sil.org/OFL}.}.
+The \textsf{\jobname} package grants access to 479 web-related icons provided by the included \emph{Font Awesome} free font, designed by Dave Gandy and released\footnote{See \url{http://fortawesome.github.com/Font-Awesome} for more details about the font itself} under the open SIL Open Font License\footnote{Available at \url{http://scripts.sil.org/OFL}.}.
 
 This package requires the \textsf{fontspec} package and either the \hologo{Xe}\hologo{(La)TeX} or Lua\hologo{(La)TeX} engine to load the included otf font.
 \end{abstract}
 
+\changes{v4.2.0}  {2014/08/20}{Update to match Font Awesome version 4.2.0, with 40 new icons.}
 \changes{v4.1.0}  {2014/08/20}{Update to match Font Awesome version 4.1.0, with 71 new icons.}
 \changes{v3.1.1}  {2013/05/10}{Update to match Font Awesome version 3.1.1, with 53 new icons.}
 \changes{v3.0.2-1}{2013/03/23}{Bigfix release: corrected the swap of the \cs{text-height} and \cs{text-width} icons.}
@@ -66,6 +67,8 @@ The \textsf{\jobname} package aims to enable easy access in \hologo{(La)TeX} to 
 \hyperref[section:file_type]{file type},
 \hyperref[section:spinner]{spinner},
 \hyperref[section:form_control]{form control},
+\hyperref[section:payment]{payment},
+\hyperref[section:chart]{chart},
 \hyperref[section:currency]{currency},
 \hyperref[section:text_editor]{text editor},
 \hyperref[section:directional]{directional},
@@ -111,112 +114,30 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 
 \subsection{Web application icons\label{section:web_application}}
 \begin{showcase}
-\showcaseicon{automobile}{faAutomobile}{alias}
-\showcaseicon{bank}{faBank}{alias}
-\showcaseicon{behance}{faBehance}
-\showcaseicon{behance-square}{faBehanceSquare}
-\showcaseicon{bomb}{faBomb}
-\showcaseicon{building}{faBuilding}
-\showcaseicon{cab}{faCab}{alias}
-\showcaseicon{car}{faCar}
-\showcaseicon{child}{faChild}
-\showcaseicon{circle-o-notch}{faCircleONotch}
-\showcaseicon{circle-thin}{faCircleThin}
-\showcaseicon{codepen}{faCodepen}
-\showcaseicon{cube}{faCube}
-\showcaseicon{cubes}{faCubes}
-\showcaseicon{database}{faDatabase}
-\showcaseicon{delicious}{faDelicious}
-\showcaseicon{deviantart}{faDeviantart}
-\showcaseicon{digg}{faDigg}
-\showcaseicon{drupal}{faDrupal}
-\showcaseicon{empire}{faEmpire}
-\showcaseicon{envelope-square}{faEnvelopeSquare}
-\showcaseicon{fax}{faFax}
-\showcaseicon{file-archive-o}{faFileArchiveO}
-\showcaseicon{file-audio-o}{faFileAudioO}
-\showcaseicon{file-code-o}{faFileCodeO}
-\showcaseicon{file-excel-o}{faFileExcelO}
-\showcaseicon{file-image-o}{faFileImageO}
-\showcaseicon{file-movie-o}{faFileMovieO}{alias}
-\showcaseicon{file-pdf-o}{faFilePdfO}
-\showcaseicon{file-photo-o}{faFilePhotoO}{alias}
-\showcaseicon{file-picture-o}{faFilePictureO}{alias}
-\showcaseicon{file-powerpoint-o}{faFilePowerpointO}
-\showcaseicon{file-sound-o}{faFileSoundO}{alias}
-\showcaseicon{file-video-o}{faFileVideoO}
-\showcaseicon{file-word-o}{faFileWordO}
-\showcaseicon{file-zip-o}{faFileZipO}{alias}
-\showcaseicon{ge}{faGe}{alias}
-\showcaseicon{git}{faGit}
-\showcaseicon{git-square}{faGitSquare}
-\showcaseicon{google}{faGoogle}
-\showcaseicon{graduation-cap}{faGraduationCap}
-\showcaseicon{hacker-news}{faHackerNews}
-\showcaseicon{header}{faHeader}
-\showcaseicon{history}{faHistory}
-\showcaseicon{institution}{faInstitution}{alias}
-\showcaseicon{joomla}{faJoomla}
-\showcaseicon{jsfiddle}{faJsfiddle}
-\showcaseicon{language}{faLanguage}
-\showcaseicon{life-bouy}{faLifeBouy}{alias}
-\showcaseicon{life-ring}{faLifeRing}
-\showcaseicon{life-saver}{faLifeSaver}{alias}
-\showcaseicon{mortar-board}{faMortarBoard}{alias}
-\showcaseicon{openid}{faOpenid}
-\showcaseicon{paper-plane}{faPaperPlane}
-\showcaseicon{paper-plane-o}{faPaperPlaneO}
-\showcaseicon{paragraph}{faParagraph}
-\showcaseicon{paw}{faPaw}
-\showcaseicon{pied-piper}{faPiedPiper}
-\showcaseicon{pied-piper-alt}{faPiedPiperAlt}
-\showcaseicon{pied-piper-square}{faPiedPiperSquare}{alias}
-\showcaseicon{qq}{faQq}
-\showcaseicon{ra}{faRa}{alias}
-\showcaseicon{rebel}{faRebel}
-\showcaseicon{recycle}{faRecycle}
-\showcaseicon{reddit}{faReddit}
-\showcaseicon{reddit-square}{faRedditSquare}
-\showcaseicon{send}{faSend}{alias}
-\showcaseicon{send-o}{faSendO}{alias}
-\showcaseicon{share-alt}{faShareAlt}
-\showcaseicon{share-alt-square}{faShareAltSquare}
-\showcaseicon{slack}{faSlack}
-\showcaseicon{sliders}{faSliders}
-\showcaseicon{soundcloud}{faSoundcloud}
-\showcaseicon{space-shuttle}{faSpaceShuttle}
-\showcaseicon{spoon}{faSpoon}
-\showcaseicon{spotify}{faSpotify}
-\showcaseicon{steam}{faSteam}
-\showcaseicon{steam-square}{faSteamSquare}
-\showcaseicon{stumbleupon}{faStumbleupon}
-\showcaseicon{stumbleupon-circle}{faStumbleuponCircle}
-\showcaseicon{support}{faSupport}{alias}
-\showcaseicon{taxi}{faTaxi}
-\showcaseicon{tencent-weibo}{faTencentWeibo}
-\showcaseicon{tree}{faTree}
-\showcaseicon{university}{faUniversity}
-\showcaseicon{vine}{faVine}
-\showcaseicon{wechat}{faWechat}{alias}
-\showcaseicon{weixin}{faWeixin}
-\showcaseicon{wordpress}{faWordpress}
-\showcaseicon{yahoo}{faYahoo}
 \showcaseicon{adjust}{faAdjust}
 \showcaseicon{anchor}{faAnchor}
 \showcaseicon{archive}{faArchive}
+\showcaseicon{area-chart}{faAreaChart}
 \showcaseicon{arrows}{faArrows}
 \showcaseicon{arrows-h}{faArrowsH}
 \showcaseicon{arrows-v}{faArrowsV}
 \showcaseicon{asterisk}{faAsterisk}
+\showcaseicon{at}{faAt}
 \showcaseicon{automobile}{faAutomobile}{alias}
 \showcaseicon{ban}{faBan}
 \showcaseicon{bank}{faBank}{alias}
-\showcaseicon{bar-chart-o}{faBarChartO}
+\showcaseicon{bar-chart}{faBarChart}
+\showcaseicon{bar-chart-o}{faBarChartO}{alias}
 \showcaseicon{barcode}{faBarcode}
 \showcaseicon{bars}{faBars}
 \showcaseicon{beer}{faBeer}
 \showcaseicon{bell}{faBell}
 \showcaseicon{bell-o}{faBellO}
+\showcaseicon{bell-slash}{faBellSlash}
+\showcaseicon{bell-slash-o}{faBellSlashO}
+\showcaseicon{bicycle}{faBicycle}
+\showcaseicon{binoculars}{faBinoculars}
+\showcaseicon{birthday-cake}{faBirthdayCake}
 \showcaseicon{bolt}{faBolt}
 \showcaseicon{bomb}{faBomb}
 \showcaseicon{book}{faBook}
@@ -228,7 +149,9 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{building-o}{faBuildingO}
 \showcaseicon{bullhorn}{faBullhorn}
 \showcaseicon{bullseye}{faBullseye}
+\showcaseicon{bus}{faBus}
 \showcaseicon{cab}{faCab}{alias}
+\showcaseicon{calculator}{faCalculator}
 \showcaseicon{calendar}{faCalendar}
 \showcaseicon{calendar-o}{faCalendarO}
 \showcaseicon{camera}{faCamera}
@@ -238,6 +161,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{caret-square-o-left}{faCaretSquareOLeft}
 \showcaseicon{caret-square-o-right}{faCaretSquareORight}
 \showcaseicon{caret-square-o-up}{faCaretSquareOUp}
+\showcaseicon{cc}{faCc}
 \showcaseicon{certificate}{faCertificate}
 \showcaseicon{check}{faCheck}
 \showcaseicon{check-circle}{faCheckCircle}
@@ -250,6 +174,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{circle-o-notch}{faCircleONotch}
 \showcaseicon{circle-thin}{faCircleThin}
 \showcaseicon{clock-o}{faClockO}
+\showcaseicon{close}{faClose}{alias}
 \showcaseicon{cloud}{faCloud}
 \showcaseicon{cloud-download}{faCloudDownload}
 \showcaseicon{cloud-upload}{faCloudUpload}
@@ -263,6 +188,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{comments}{faComments}
 \showcaseicon{comments-o}{faCommentsO}
 \showcaseicon{compass}{faCompass}
+\showcaseicon{copyright}{faCopyright}
 \showcaseicon{credit-card}{faCreditCard}
 \showcaseicon{crop}{faCrop}
 \showcaseicon{crosshairs}{faCrosshairs}
@@ -289,6 +215,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{external-link-square}{faExternalLinkSquare}
 \showcaseicon{eye}{faEye}
 \showcaseicon{eye-slash}{faEyeSlash}
+\showcaseicon{eyedropper}{faEyedropper}
 \showcaseicon{fax}{faFax}
 \showcaseicon{female}{faFemale}
 \showcaseicon{fighter-jet}{faFighterJet}
@@ -320,6 +247,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{folder-open}{faFolderOpen}
 \showcaseicon{folder-open-o}{faFolderOpenO}
 \showcaseicon{frown-o}{faFrownO}
+\showcaseicon{futbol-o}{faFutbolO}
 \showcaseicon{gamepad}{faGamepad}
 \showcaseicon{gavel}{faGavel}
 \showcaseicon{gear}{faGear}{alias}
@@ -350,9 +278,11 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{level-down}{faLevelDown}
 \showcaseicon{level-up}{faLevelUp}
 \showcaseicon{life-bouy}{faLifeBouy}{alias}
+\showcaseicon{life-buoy}{faLifeBuoy}{alias}
 \showcaseicon{life-ring}{faLifeRing}
 \showcaseicon{life-saver}{faLifeSaver}{alias}
 \showcaseicon{lightbulb-o}{faLightbulbO}
+\showcaseicon{line-chart}{faLineChart}
 \showcaseicon{location-arrow}{faLocationArrow}
 \showcaseicon{lock}{faLock}
 \showcaseicon{magic}{faMagic}
@@ -376,6 +306,8 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{mortar-board}{faMortarBoard}{alias}
 \showcaseicon{music}{faMusic}
 \showcaseicon{navicon}{faNavicon}{alias}
+\showcaseicon{newspaper-o}{faNewspaperO}
+\showcaseicon{paint-brush}{faPaintBrush}
 \showcaseicon{paper-plane}{faPaperPlane}
 \showcaseicon{paper-plane-o}{faPaperPlaneO}
 \showcaseicon{paw}{faPaw}
@@ -386,7 +318,9 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{phone-square}{faPhoneSquare}
 \showcaseicon{photo}{faPhoto}{alias}
 \showcaseicon{picture-o}{faPictureO}
+\showcaseicon{pie-chart}{faPieChart}
 \showcaseicon{plane}{faPlane}
+\showcaseicon{plug}{faPlug}
 \showcaseicon{plus}{faPlus}
 \showcaseicon{plus-circle}{faPlusCircle}
 \showcaseicon{plus-square}{faPlusSquare}
@@ -402,6 +336,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{random}{faRandom}
 \showcaseicon{recycle}{faRecycle}
 \showcaseicon{refresh}{faRefresh}
+\showcaseicon{remove}{faRemove}{alias}
 \showcaseicon{reorder}{faReorder}{alias}
 \showcaseicon{reply}{faReply}
 \showcaseicon{reply-all}{faReplyAll}
@@ -428,6 +363,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{sitemap}{faSitemap}
 \showcaseicon{sliders}{faSliders}
 \showcaseicon{smile-o}{faSmileO}
+\showcaseicon{soccer-ball-o}{faSoccerBallO}{alias}
 \showcaseicon{sort}{faSort}
 \showcaseicon{sort-alpha-asc}{faSortAlphaAsc}
 \showcaseicon{sort-alpha-desc}{faSortAlphaDesc}
@@ -472,12 +408,16 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{tint}{faTint}
 \showcaseicon{toggle-down}{faToggleDown}{alias}
 \showcaseicon{toggle-left}{faToggleLeft}{alias}
+\showcaseicon{toggle-off}{faToggleOff}
+\showcaseicon{toggle-on}{faToggleOn}
 \showcaseicon{toggle-right}{faToggleRight}{alias}
 \showcaseicon{toggle-up}{faToggleUp}{alias}
+\showcaseicon{trash}{faTrash}
 \showcaseicon{trash-o}{faTrashO}
 \showcaseicon{tree}{faTree}
 \showcaseicon{trophy}{faTrophy}
 \showcaseicon{truck}{faTruck}
+\showcaseicon{tty}{faTty}
 \showcaseicon{umbrella}{faUmbrella}
 \showcaseicon{university}{faUniversity}
 \showcaseicon{unlock}{faUnlock}
@@ -492,6 +432,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{volume-up}{faVolumeUp}
 \showcaseicon{warning}{faWarning}{alias}
 \showcaseicon{wheelchair}{faWheelchair}
+\showcaseicon{wifi}{faWifi}
 \showcaseicon{wrench}{faWrench}
 \end{showcase}
 
@@ -541,6 +482,28 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{square-o}{faSquareO}
 \end{showcase}
 
+\subsection{Payment icons\label{section:payment}}
+\begin{showcase}
+\showcaseicon{cc-amex}{faCcAmex}
+\showcaseicon{cc-discover}{faCcDiscover}
+\showcaseicon{cc-mastercard}{faCcMastercard}
+\showcaseicon{cc-paypal}{faCcPaypal}
+\showcaseicon{cc-stripe}{faCcStripe}
+\showcaseicon{cc-visa}{faCcVisa}
+\showcaseicon{credit-card}{faCreditCard}
+\showcaseicon{google-wallet}{faGoogleWallet}
+\showcaseicon{paypal}{faPaypal}
+\end{showcase}
+
+\subsection{Chart icons\label{section:chart}}
+\begin{showcase}
+\showcaseicon{area-chart}{faAreaChart}
+\showcaseicon{bar-chart}{faBarChart}
+\showcaseicon{bar-chart-o}{faBarChartO}{alias}
+\showcaseicon{line-chart}{faLineChart}
+\showcaseicon{pie-chart}{faPieChart}
+\end{showcase}
+
 \subsection{Currency icons\label{section:currency}}
 \begin{showcase}
 \showcaseicon{bitcoin}{faBitcoin}{alias}
@@ -550,6 +513,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{eur}{faEur}
 \showcaseicon{euro}{faEuro}{alias}
 \showcaseicon{gbp}{faGbp}
+\showcaseicon{ils}{faIls}
 \showcaseicon{inr}{faInr}
 \showcaseicon{jpy}{faJpy}
 \showcaseicon{krw}{faKrw}
@@ -559,6 +523,8 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{rub}{faRub}
 \showcaseicon{ruble}{faRuble}{alias}
 \showcaseicon{rupee}{faRupee}{alias}
+\showcaseicon{shekel}{faShekel}{alias}
+\showcaseicon{sheqel}{faSheqel}{alias}
 \showcaseicon{try}{faTry}
 \showcaseicon{turkish-lira}{faTurkishLira}{alias}
 \showcaseicon{usd}{faUsd}
@@ -566,7 +532,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{yen}{faYen}{alias}
 \end{showcase}
 
-\subsection{Text editor icons\label{section:text_editor}}
+\subsection{Text Editor icons\label{section:test_editor}}
 \begin{showcase}
 \showcaseicon{align-center}{faAlignCenter}
 \showcaseicon{align-justify}{faAlignJustify}
@@ -699,6 +665,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \begin{showcase}
 \showcaseicon{adn}{faAdn}
 \showcaseicon{android}{faAndroid}
+\showcaseicon{angellist}{faAngellist}
 \showcaseicon{apple}{faApple}
 \showcaseicon{behance}{faBehance}
 \showcaseicon{behance-square}{faBehanceSquare}
@@ -706,6 +673,12 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{bitbucket-square}{faBitbucketSquare}
 \showcaseicon{bitcoin}{faBitcoin}{alias}
 \showcaseicon{btc}{faBtc}
+\showcaseicon{cc-amex}{faCcAmex}
+\showcaseicon{cc-discover}{faCcDiscover}
+\showcaseicon{cc-mastercard}{faCcMastercard}
+\showcaseicon{cc-paypal}{faCcPaypal}
+\showcaseicon{cc-stripe}{faCcStripe}
+\showcaseicon{cc-visa}{faCcVisa}
 \showcaseicon{codepen}{faCodepen}
 \showcaseicon{css3}{faCss3}
 \showcaseicon{delicious}{faDelicious}
@@ -729,20 +702,25 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{google}{faGoogle}
 \showcaseicon{google-plus}{faGooglePlus}
 \showcaseicon{google-plus-square}{faGooglePlusSquare}
+\showcaseicon{google-wallet}{faGoogleWallet}
 \showcaseicon{hacker-news}{faHackerNews}
 \showcaseicon{html5}{faHtml5}
 \showcaseicon{instagram}{faInstagram}
+\showcaseicon{ioxhost}{faIoxhost}
 \showcaseicon{joomla}{faJoomla}
 \showcaseicon{jsfiddle}{faJsfiddle}
+\showcaseicon{lastfm}{faLastfm}
+\showcaseicon{lastfm-square}{faLastfmSquare}
 \showcaseicon{linkedin}{faLinkedin}
 \showcaseicon{linkedin-square}{faLinkedinSquare}
 \showcaseicon{linux}{faLinux}
 \showcaseicon{maxcdn}{faMaxcdn}
+\showcaseicon{meanpath}{faMeanpath}
 \showcaseicon{openid}{faOpenid}
 \showcaseicon{pagelines}{faPagelines}
+\showcaseicon{paypal}{faPaypal}
 \showcaseicon{pied-piper}{faPiedPiper}
 \showcaseicon{pied-piper-alt}{faPiedPiperAlt}
-\showcaseicon{pied-piper-square}{faPiedPiperSquare}{alias}
 \showcaseicon{pinterest}{faPinterest}
 \showcaseicon{pinterest-square}{faPinterestSquare}
 \showcaseicon{qq}{faQq}
@@ -755,6 +733,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{share-alt-square}{faShareAltSquare}
 \showcaseicon{skype}{faSkype}
 \showcaseicon{slack}{faSlack}
+\showcaseicon{slideshare}{faSlideshare}
 \showcaseicon{soundcloud}{faSoundcloud}
 \showcaseicon{spotify}{faSpotify}
 \showcaseicon{stack-exchange}{faStackExchange}
@@ -767,6 +746,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{trello}{faTrello}
 \showcaseicon{tumblr}{faTumblr}
 \showcaseicon{tumblr-square}{faTumblrSquare}
+\showcaseicon{twitch}{faTwitch}
 \showcaseicon{twitter}{faTwitter}
 \showcaseicon{twitter-square}{faTwitterSquare}
 \showcaseicon{vimeo-square}{faVimeoSquare}
@@ -780,6 +760,7 @@ Once the \textsf{\jobname} package loaded, icons can be accessed through the gen
 \showcaseicon{xing}{faXing}
 \showcaseicon{xing-square}{faXingSquare}
 \showcaseicon{yahoo}{faYahoo}
+\showcaseicon{yelp}{faYelp}
 \showcaseicon{youtube}{faYoutube}
 \showcaseicon{youtube-play}{faYoutubePlay}
 \showcaseicon{youtube-square}{faYoutubeSquare}
